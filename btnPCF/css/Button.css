@@ -1,0 +1,78 @@
+.btnPCF button {
+	background-color: red;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 4px;
+	/*
+	AcceptsFocus: ;
+AccessibleLabel: ;
+Align: ;
+Appearance: ;
+AutoDisableOnSelect: ;
+BasePaletteColor: ;
+BorderColor: ;
+BorderStyle: ;
+BorderThickness: ;
+Color: ;
+ContentLanguage: ;
+DisabledBorderColor: ;
+DisabledColor: ;
+DisabledFill: ;
+DisplayMode: ;
+Fill: ;
+FocusedBorderColor: ;
+FocusedBorderThickness: ;
+Font: ;
+FontWeight: ;
+Height: ;
+
+Icon: ;
+IconStyle: ;
+IconRotation: ;
+Layout: ;
+Italic: ;
+OnSelect: ;
+PaddingBottom: ;
+PaddingLeft: ;
+PaddingRight: ;
+PaddingTop: ;
+
+RadiusBottomLeft: ;
+RadiusBottomRight: ;
+RadiusTopLeft: ;
+RadiusTopRight: ;
+Size: ;
+Strikethrough: ;
+TabIndex: ;
+Text: ;
+Tooltip: ;
+Underline: ;
+VerticalAlign: ;
+Visible: ;
+Width: ;
+Wrap: ;
+X: ;
+Y: ;
+
+	*/
+}
+
+.btnPCF button:hover {
+	background-color: darkred; /*HoverFill*/
+	/*HoverBorderColor: ;
+	HoverColor: ;
+	HoverFill: ;*/
+}
+
+.btnPCF button:active {
+	background-color: darkred; 
+	/* PressedBorderColor: ;
+PressedColor: ;
+PressedFill: ; */
+}

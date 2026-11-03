@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="Projects" constructor="btnPCF" version="0.0.1" display-name-key="btnPCF" description-key="btnPCF description" control-type="standard" >
-    <!--external-service-usage node declares whether this 3rd party PCF control is using external service or not, if yes, this control will be considered as premium and please also add the external domain it is using.
-    If it is not using any external service, please set the enabled="false" and DO NOT add any domain below. The "enabled" will be false by default.
+  <control namespace="Projects" constructor="btnPCF" version="1.0.0" display-name-key="btnPCF"
+    description-key="Button PCF" control-type="standard">
+    <!--external-service-usage
+    node declares whether this 3rd party PCF control is using external service or not, if yes, this
+    control will be considered as premium and please also add the external domain it is using.
+    If it is not using any external service, please set the enabled="false" and DO NOT add any domain
+    below. The "enabled" will be false by default.
     Example1:
       <external-service-usage enabled="true">
         <domain>www.Microsoft.com</domain>
@@ -12,13 +16,180 @@
       </external-service-usage>
     -->
     <external-service-usage enabled="false">
-      <!--UNCOMMENT TO ADD EXTERNAL DOMAINS
+      <!--UNCOMMENT
+      TO ADD EXTERNAL DOMAINS
       <domain></domain>
       <domain></domain>
       -->
     </external-service-usage>
-    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <!-- property node identifies a specific, configurable piece of data
+    that the control expects from CDS -->
+    <property name="AcceptsFocus" display-name-key="AcceptsFocus_Display_Key"
+      description-key="AcceptsFocus_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="AccessibleLabel"
+      display-name-key="AccessibleLabel_Display_Key" description-key="AccessibleLabel_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Align"
+      display-name-key="Align_Display_Key" description-key="Align_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Appearance"
+      display-name-key="Appearance_Display_Key" description-key="Appearance_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property
+      name="AutoDisableOnSelect" display-name-key="AutoDisableOnSelect_Display_Key"
+      description-key="AutoDisableOnSelect_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="BasePaletteColor"
+      display-name-key="BasePaletteColor_Display_Key" description-key="BasePaletteColor_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="BorderColor"
+      display-name-key="BorderColor_Display_Key" description-key="BorderColor_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="BorderStyle"
+      display-name-key="BorderStyle_Display_Key" description-key="BorderStyle_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="BorderThickness"
+      display-name-key="BorderThickness_Display_Key" description-key="BorderThickness_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Color"
+      display-name-key="Color_Display_Key" description-key="Color_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="ContentLanguage"
+      display-name-key="ContentLanguage_Display_Key" description-key="ContentLanguage_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property
+      name="DisabledBorderColor" display-name-key="DisabledBorderColor_Display_Key"
+      description-key="DisabledBorderColor_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="DisabledColor"
+      display-name-key="DisabledColor_Display_Key"
+      description-key="DisabledColor_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="DisabledFill"
+      display-name-key="DisabledFill_Display_Key" description-key="DisabledFill_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="DisplayMode"
+      display-name-key="DisplayMode_Display_Key" description-key="DisplayMode_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Fill"
+      display-name-key="Fill_Display_Key" description-key="Fill_Desc_Key" of-type="SingleLine.Text"
+      usage="bound" required="true" />
+    <property name="FocusedBorderColor"
+      display-name-key="FocusedBorderColor_Display_Key"
+      description-key="FocusedBorderColor_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="FocusedBorderThickness"
+      display-name-key="FocusedBorderThickness_Display_Key"
+      description-key="FocusedBorderThickness_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="Font" display-name-key="Font_Display_Key"
+      description-key="Font_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property
+      name="FontWeight" display-name-key="FontWeight_Display_Key"
+      description-key="FontWeight_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <property name="Height" display-name-key="Height_Display_Key"
+      description-key="Height_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="HoverBorderColor"
+      display-name-key="HoverBorderColor_Display_Key" description-key="HoverBorderColor_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="HoverColor"
+      display-name-key="HoverColor_Display_Key" description-key="HoverColor_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="HoverFill"
+      display-name-key="HoverFill_Display_Key" description-key="HoverFill_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Icon"
+      display-name-key="Icon_Display_Key" description-key="Icon_Desc_Key" of-type="SingleLine.Text"
+      usage="bound" required="true" />
+    <property name="IconStyle"
+      display-name-key="IconStyle_Display_Key" description-key="IconStyle_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="IconRotation"
+      display-name-key="IconRotation_Display_Key" description-key="IconRotation_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Layout"
+      display-name-key="Layout_Display_Key" description-key="Layout_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Italic"
+      display-name-key="Italic_Display_Key" description-key="Italic_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="OnSelect"
+      display-name-key="OnSelect_Display_Key" description-key="OnSelect_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="PaddingBottom"
+      display-name-key="PaddingBottom_Display_Key" description-key="PaddingBottom_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="PaddingLeft"
+      display-name-key="PaddingLeft_Display_Key" description-key="PaddingLeft_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="PaddingRight"
+      display-name-key="PaddingRight_Display_Key" description-key="PaddingRight_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="PaddingTop"
+      display-name-key="PaddingTop_Display_Key" description-key="PaddingTop_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property
+      name="PressedBorderColor" display-name-key="PressedBorderColor_Display_Key"
+      description-key="PressedBorderColor_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="PressedColor" display-name-key="PressedColor_Display_Key"
+      description-key="PressedColor_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="PressedFill" display-name-key="PressedFill_Display_Key"
+      description-key="PressedFill_Desc_Key" of-type="SingleLine.Text" usage="bound"
+      required="true" />
+    <property name="RadiusBottomLeft"
+      display-name-key="RadiusBottomLeft_Display_Key" description-key="RadiusBottomLeft_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="RadiusBottomRight"
+      display-name-key="RadiusBottomRight_Display_Key" description-key="RadiusBottomRight_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="RadiusTopLeft"
+      display-name-key="RadiusTopLeft_Display_Key" description-key="RadiusTopLeft_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="RadiusTopRight"
+      display-name-key="RadiusTopRight_Display_Key" description-key="RadiusTopRight_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Size"
+      display-name-key="Size_Display_Key" description-key="Size_Desc_Key" of-type="SingleLine.Text"
+      usage="bound" required="true" />
+    <property name="Strikethrough"
+      display-name-key="Strikethrough_Display_Key" description-key="Strikethrough_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="TabIndex"
+      display-name-key="TabIndex_Display_Key" description-key="TabIndex_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Text"
+      display-name-key="Text_Display_Key" description-key="Text_Desc_Key" of-type="SingleLine.Text"
+      usage="bound" required="true" />
+    <property name="Tooltip"
+      display-name-key="Tooltip_Display_Key" description-key="Tooltip_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Underline"
+      display-name-key="Underline_Display_Key" description-key="Underline_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="VerticalAlign"
+      display-name-key="VerticalAlign_Display_Key" description-key="VerticalAlign_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Visible"
+      display-name-key="Visible_Display_Key" description-key="Visible_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Width"
+      display-name-key="Width_Display_Key" description-key="Width_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="Wrap"
+      display-name-key="Wrap_Display_Key" description-key="Wrap_Desc_Key" of-type="SingleLine.Text"
+      usage="bound" required="true" />
+    <property name="X" display-name-key="X_Display_Key"
+      description-key="X_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property
+      name="Y" display-name-key="Y_Display_Key" description-key="Y_Desc_Key"
+      of-type="SingleLine.Text" usage="bound" required="true" />
+
+
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
@@ -28,10 +199,14 @@
         <type>FP</type>
         <type>Decimal</type>
       </type-group>
-      <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+      <property name="sampleProperty" display-name-key="Property_Display_Key"
+    description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
     -->
     <resources>
-      <code path="index.ts" order="1"/>
+      <code path="index.ts" order="1" />
+      <css path="css/Button.css" order="1" />
+      <platform-library name="react" version="18.2.0" />
+      <platform-library name="Fluent" version="9.46.2" />
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <css path="css/btnPCF.css" order="1" />
       <resx path="strings/btnPCF.1033.resx" version="1.0.0" />
