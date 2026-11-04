@@ -1,5 +1,5 @@
 .btnPCF button {
-	background-color: red;
+	background-color: context.parameters.Fill.raw; /*Fill*/
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -9,6 +9,7 @@
 	font-size: 16px;
 	cursor: pointer;
 	border-radius: 4px;
+
 	/*
 	AcceptsFocus: ;
 AccessibleLabel: ;
@@ -71,7 +72,7 @@ Y: ;
 }
 
 .btnPCF button:active {
-	background-color: darkred; 
+	background-color: darkred;
 	/* PressedBorderColor: ;
 PressedColor: ;
 PressedFill: ; */
