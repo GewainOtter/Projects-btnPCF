@@ -5,7 +5,7 @@ Complete Classic vs Modern Button property comparison
 | Property | Data type | Short description | Classic Button | Modern Button | Comparison / notes |
 |---|---|---|:---:|:---:|---|
 | **AcceptsFocus** | Boolean | Determines whether the control can receive keyboard focus. | ❌ | ✅ | Modern-specific focus behaviour. |
-| **AccessibleLabel** | Text | Descriptive label exposed to screen readers and other assistive technology. | ✅ | ✅ | Particularly important for icon-only buttons. |
+| **AccessibleLabel** | Text | Descriptive label exposed to screen readers and other assistive technology. | ✅⁕ | ✅ | Particularly important for icon-only buttons. |
 | **Align** | Enum | Sets the horizontal alignment of the button's content. | ✅ | ✅ | Modern supports Left, Center, Right and Justify. |
 | **Appearance** | Enum | Selects the button's predefined visual style. | ❌ | ✅ | Modern supports Primary, Secondary, Outline, Subtle and Transparent. |
 | **AutoDisableOnSelect** | Boolean | Automatically disables the button while its `OnSelect` formula executes. | ✅ | ❌ | Classic-specific behaviour. |
