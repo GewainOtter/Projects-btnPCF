@@ -6,9 +6,10 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: var(--btn-size);
 	cursor: pointer;
 	border-radius: 4px;
+	height: var(--btn-height);
 
 	/*
 	AcceptsFocus: ;

@@ -110,7 +110,7 @@ TO ADD EXTERNAL DOMAINS
     <!-- 21 -->
     <property name="Height" display-name-key="Height_Display_Key"
       description-key="Sets the vertical size of the button." of-type="Whole.None" usage="bound"
-      required="true" default-value="val" />
+      required="true" default-value="60" />
     <!-- 22 -->
     <property name="HoverBorderColor" display-name-key="HoverBorderColor_Display_Key"
       description-key="Sets the border colour while the pointer hovers over the button."
@@ -198,7 +198,7 @@ TO ADD EXTERNAL DOMAINS
     <!-- 42 -->
     <property name="Size" display-name-key="Size_Display_Key"
       description-key="Sets the font size of the button label." of-type="Whole.None" usage="bound"
-      required="true" default-value="val" />
+      required="true" default-value="32" />
     <!-- 43 -->
     <property name="Strikethrough" display-name-key="Strikethrough_Display_Key"
       description-key="Determines whether a line appears through the button text."
