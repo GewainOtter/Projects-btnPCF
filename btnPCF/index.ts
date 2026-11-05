@@ -5,7 +5,8 @@ import "./css/Button.css";
 
 export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 	root: Root; // Replace 'any' with the correct type if available
-	
+	private container!: HTMLDivElement;
+
 	/**
 	 * Empty constructor.
 	 */
@@ -27,6 +28,8 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		state: ComponentFramework.Dictionary,
 		container: HTMLDivElement,
 	): void {
+		this.container = container;
+		this.container.classList.add("btnPCF");
 		// // A basic button with vanilla JS and the DOM
 		// const btn = document.createElement('button');
 		// btn.textContent = 'Click me!';
@@ -49,9 +52,64 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		this.root.render(
 			Button({
 				label: "React Button",
+				
 				onClick: () => alert("React Button Clicked!"),
 			}),
 		);
+		this.container.style.setProperty("--btn-acceptsfocus", String(context.parameters.AcceptsFocus.raw));
+		this.container.style.setProperty("--btn-accessiblelabel", String(context.parameters.AccessibleLabel.raw));
+		this.container.style.setProperty("--btn-align", String(context.parameters.Align.raw));
+		this.container.style.setProperty("--btn-appearance", String(context.parameters.Appearance.raw));
+		this.container.style.setProperty("--btn-autodisableonselect", String(context.parameters.AutoDisableOnSelect.raw));
+		this.container.style.setProperty("--btn-basepalettecolor", String(context.parameters.BasePaletteColor.raw));
+		this.container.style.setProperty("--btn-bordercolor", String(context.parameters.BorderColor.raw));
+		this.container.style.setProperty("--btn-borderstyle", String(context.parameters.BorderStyle.raw));
+		this.container.style.setProperty("--btn-borderthickness", String(context.parameters.BorderThickness.raw));
+		this.container.style.setProperty("--btn-color", String(context.parameters.Color.raw));
+		this.container.style.setProperty("--btn-contentlanguage", String(context.parameters.ContentLanguage.raw));
+		this.container.style.setProperty("--btn-disabledbordercolor", String(context.parameters.DisabledBorderColor.raw));
+		this.container.style.setProperty("--btn-disabledcolor", String(context.parameters.DisabledColor.raw));
+		this.container.style.setProperty("--btn-disabledfill", String(context.parameters.DisabledFill.raw));
+		this.container.style.setProperty("--btn-displaymode", String(context.parameters.DisplayMode.raw));
+		this.container.style.setProperty("--btn-fill", String(context.parameters.Fill.raw));
+		this.container.style.setProperty("--btn-focusedbordercolor", String(context.parameters.FocusedBorderColor.raw));
+		this.container.style.setProperty("--btn-focusedborderthickness", String(context.parameters.FocusedBorderThickness.raw));
+		this.container.style.setProperty("--btn-font", String(context.parameters.Font.raw));
+		this.container.style.setProperty("--btn-fontweight", String(context.parameters.FontWeight.raw));
+		this.container.style.setProperty("--btn-height", String(context.parameters.Height.raw));
+		this.container.style.setProperty("--btn-hoverbordercolor", String(context.parameters.HoverBorderColor.raw));
+		this.container.style.setProperty("--btn-hovercolor", String(context.parameters.HoverColor.raw));
+		this.container.style.setProperty("--btn-hoverfill", String(context.parameters.HoverFill.raw));
+		this.container.style.setProperty("--btn-icon", String(context.parameters.Icon.raw));
+		this.container.style.setProperty("--btn-iconstyle", String(context.parameters.IconStyle.raw));
+		this.container.style.setProperty("--btn-iconrotation", String(context.parameters.IconRotation.raw));
+		this.container.style.setProperty("--btn-layout", String(context.parameters.Layout.raw));
+		this.container.style.setProperty("--btn-italic", String(context.parameters.Italic.raw));
+		this.container.style.setProperty("--btn-onselect", String(context.parameters.OnSelect.raw));
+		this.container.style.setProperty("--btn-paddingbottom", String(context.parameters.PaddingBottom.raw));
+		this.container.style.setProperty("--btn-paddingleft", String(context.parameters.PaddingLeft.raw));
+		this.container.style.setProperty("--btn-paddingright", String(context.parameters.PaddingRight.raw));
+		this.container.style.setProperty("--btn-paddingtop", String(context.parameters.PaddingTop.raw));
+		this.container.style.setProperty("--btn-pressedbordercolor", String(context.parameters.PressedBorderColor.raw));
+		this.container.style.setProperty("--btn-pressedcolor", String(context.parameters.PressedColor.raw));
+		this.container.style.setProperty("--btn-pressedfill", String(context.parameters.PressedFill.raw));
+		this.container.style.setProperty("--btn-radiusbottomleft", String(context.parameters.RadiusBottomLeft.raw));
+		this.container.style.setProperty("--btn-radiusbottomright", String(context.parameters.RadiusBottomRight.raw));
+		this.container.style.setProperty("--btn-radiustopleft", String(context.parameters.RadiusTopLeft.raw));
+		this.container.style.setProperty("--btn-radiustopright", String(context.parameters.RadiusTopRight.raw));
+		this.container.style.setProperty("--btn-size", String(context.parameters.Size.raw));
+		this.container.style.setProperty("--btn-strikethrough", String(context.parameters.Strikethrough.raw));
+		this.container.style.setProperty("--btn-tabindex", String(context.parameters.TabIndex.raw));
+		this.container.style.setProperty("--btn-text", String(context.parameters.Text.raw));
+		this.container.style.setProperty("--btn-tooltip", String(context.parameters.Tooltip.raw));
+		this.container.style.setProperty("--btn-underline", String(context.parameters.Underline.raw));
+		this.container.style.setProperty("--btn-verticalalign", String(context.parameters.VerticalAlign.raw));
+		this.container.style.setProperty("--btn-visible", String(context.parameters.Visible.raw));
+		this.container.style.setProperty("--btn-width", String(context.parameters.Width.raw));
+		this.container.style.setProperty("--btn-wrap", String(context.parameters.Wrap.raw));
+		this.container.style.setProperty("--btn-x", String(context.parameters.X.raw));
+		this.container.style.setProperty("--btn-y", String(context.parameters.Y.raw));
+
 	}
 
 	/**
