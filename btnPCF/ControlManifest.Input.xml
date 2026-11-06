@@ -28,23 +28,33 @@ TO ADD EXTERNAL DOMAINS
     <property name="AcceptsFocus" display-name-key="AcceptsFocus_Display_Key"
       description-key="Determines whether the control can receive keyboard focus."
       of-type="TwoOptions"
-      usage="bound" required="true" default-value="val" />
+      usage="bound" required="true" default-value="true" />
     <!-- 2 -->
     <property name="AccessibleLabel" display-name-key="AccessibleLabel_Display_Key"
       description-key="Descriptive label exposed to screen readers and other assistive technology."
-      of-type="SingleLine.Text" usage="bound" required="true" default-value="val" />
+      of-type="SingleLine.Text" usage="bound" required="true" default-value="PCF Button" />
     <!-- 3 -->
     <property name="Align" display-name-key="Align_Display_Key"
       description-key="Sets the horizontal alignment of the button's content." of-type="Enum"
-      usage="bound" required="true" default-value="val" />
+      usage="bound" required="true" default-value="1" />
+      <!-- <Enum name="Align" display-name-key="Align_Display_Key">
+        <option value="0" display-name-key="Align_Left_Display_Key" />
+        <option value="1" display-name-key="Align_Center_Display_Key" />
+        <option value="2" display-name-key="Align_Right_Display_Key" />
+      </Enum>
+      </property> -->
     <!-- 4 -->
     <property name="Appearance" display-name-key="Appearance_Display_Key"
       description-key="Selects the button's predefined visual style." of-type="Enum" usage="bound"
-      required="true" default-value="val" />
+      required="true" default-value="0" />
+      <!-- <Enum name="Appearance" display-name-key="Appearance_Display_Key">
+        <option value="0" display-name-key="Appearance_Default_Display_Key" />
+        <option value="1" display-name-key="Appearance_Primary_Display_Key" />
+      </Enum> -->
     <!-- 5 -->
     <property name="AutoDisableOnSelect" display-name-key="AutoDisableOnSelect_Display_Key"
       description-key="Automatically disables the button while its `OnSelect` formula executes."
-      of-type="TwoOptions" usage="bound" required="true" default-value="val" />
+      of-type="TwoOptions" usage="bound" required="true" default-value="true" />
     <!-- 6 -->
     <property name="BasePaletteColor" display-name-key="BasePaletteColor_Display_Key"
       description-key="Sets the base colour from which the Modern theme generates the button palette."
@@ -56,11 +66,15 @@ TO ADD EXTERNAL DOMAINS
     <!-- 8 -->
     <property name="BorderStyle" display-name-key="BorderStyle_Display_Key"
       description-key="Sets the button border style." of-type="Enum" usage="bound" required="true"
-      default-value="val" />
+      default-value="0" >
+        <value name="0" display-name-key="BorderStyle_Solid_Display_Key">Solid</value>
+        <value name="1" display-name-key="BorderStyle_Dashed_Display_Key">Dashing</value>
+        <value name="2" display-name-key="BorderStyle_Dotted_Display_Key">Dotty</value>
+      </property>
     <!-- 9 -->
     <property name="BorderThickness" display-name-key="BorderThickness_Display_Key"
       description-key="Sets the thickness of the button border in pixels." of-type="Whole.None"
-      usage="bound" required="true" default-value="val" />
+      usage="bound" required="true" default-value="2" />
     <!-- 10 -->
     <property name="Color" display-name-key="Color_Display_Key"
       description-key="Sets the colour of the button label text." of-type="OptionSet" usage="bound"
@@ -95,6 +109,7 @@ TO ADD EXTERNAL DOMAINS
       description-key="Sets the border colour when the control has keyboard focus."
       of-type="OptionSet"
       usage="bound" required="true" default-value="val" />
+
     <!-- 18 -->
     <property name="FocusedBorderThickness" display-name-key="FocusedBorderThickness_Display_Key"
       description-key="Sets the border thickness when the button has keyboard focus."
@@ -233,7 +248,7 @@ TO ADD EXTERNAL DOMAINS
     <!-- 50 -->
     <property name="Width" display-name-key="Width_Display_Key"
       description-key="Sets the horizontal size of the button." of-type="Whole.None" usage="bound"
-      required="true" default-value="val" />
+      required="true" default-value="150" />
     <!-- 51 -->
     <property name="Wrap" display-name-key="Wrap_Display_Key"
       description-key="Determines whether button text wraps onto multiple lines when required."
