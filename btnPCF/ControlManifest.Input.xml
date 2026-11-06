@@ -62,7 +62,7 @@ TO ADD EXTERNAL DOMAINS
     <!-- 7 -->
     <property name="BorderColor" display-name-key="BorderColor_Display_Key"
       description-key="Sets the colour of the button border." of-type="Enum" usage="bound"
-      required="true" default-value="0">
+      required="true">
       <value name="HmrcGreen40D" display-name-key="Color_HmrcGreen40D">--hmrc-green-40d</value>
       <value name="HmrcGreenStandard" display-name-key="Color_HmrcGreenStandard">--hmrc-green-standard</value>
       <value name="HmrcGreen20L" display-name-key="Color_HmrcGreen20L">--hmrc-green-20l</value>

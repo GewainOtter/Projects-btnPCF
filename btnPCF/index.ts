@@ -77,8 +77,8 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 				`var(${borderColor})`,
 			);
 		}
-		this.container.style.setProperty("--btn-borderstyle", String(context.parameters.BorderStyle.raw));
-		this.container.style.setProperty("--btn-borderthickness", String(context.parameters.BorderThickness.raw));
+		this.container.style.setProperty("--btn-border-style", String(context.parameters.BorderStyle.raw));
+		this.container.style.setProperty("--btn-border-thickness", String(context.parameters.BorderThickness.raw) + "px");
 		this.container.style.setProperty("--btn-color", String(context.parameters.Color.raw));
 		this.container.style.setProperty("--btn-contentlanguage", String(context.parameters.ContentLanguage.raw));
 		this.container.style.setProperty("--btn-disabledbordercolor", String(context.parameters.DisabledBorderColor.raw));
@@ -90,7 +90,7 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		this.container.style.setProperty("--btn-focusedborderthickness", String(context.parameters.FocusedBorderThickness.raw));
 		this.container.style.setProperty("--btn-font", String(context.parameters.Font.raw));
 		this.container.style.setProperty("--btn-fontweight", String(context.parameters.FontWeight.raw));
-		this.container.style.setProperty("--btn-height", String(context.parameters.Height.raw));
+		this.container.style.setProperty("--btn-height", String(context.parameters.Height.raw) + "px");
 		this.container.style.setProperty("--btn-hoverbordercolor", String(context.parameters.HoverBorderColor.raw));
 		this.container.style.setProperty("--btn-hovercolor", String(context.parameters.HoverColor.raw));
 		this.container.style.setProperty("--btn-hoverfill", String(context.parameters.HoverFill.raw));
@@ -119,7 +119,7 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		this.container.style.setProperty("--btn-underline", String(context.parameters.Underline.raw));
 		this.container.style.setProperty("--btn-verticalalign", String(context.parameters.VerticalAlign.raw));
 		this.container.style.setProperty("--btn-visible", String(context.parameters.Visible.raw));
-		this.container.style.setProperty("--btn-width", String(context.parameters.Width.raw));
+		this.container.style.setProperty("--btn-width", String(context.parameters.Width.raw) + "px");
 		this.container.style.setProperty("--btn-wrap", String(context.parameters.Wrap.raw));
 		this.container.style.setProperty("--btn-x", String(context.parameters.X.raw));
 		this.container.style.setProperty("--btn-y", String(context.parameters.Y.raw));
