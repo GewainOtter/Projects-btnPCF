@@ -1,15 +1,15 @@
 .btnPCF button {
 	background-color: var(--btn-fill); /*Fill*/
-	border: var(--btn-border-thickness) solid var(--btn-border-color); /*BorderThickness, BorderColor*/
-	color: var(--btn-color);
-	text-align: var(--btn-text-align);
+	border: var(--btn-border-thickness) var(--btn-border-style) var(--btn-border-color, var(--hmrc-green-standard)); /*BorderThickness, BorderStyle, BorderColor*/
+	color: var(--btn-color); /*Color*/
+	text-align: var(--btn-text-align); /*TextAlign*/
 	text-decoration: none;
 	display: inline-block;
-	font-size: var(--btn-size);
+	font-size: var(--btn-size); /*Size*/
 	cursor: pointer;
 	border-radius: var(--btn-radius-top-left) var(--btn-radius-top-right) var(--btn-radius-bottom-right) var(--btn-radius-bottom-left); /*RadiusTopLeft, RadiusTopRight, RadiusBottomRight, RadiusBottomLeft*/
-	height: var(--btn-height);
-    width: var(--btn-width);
+	height: var(--btn-height); /*Height*/
+    width: var(--btn-width); /*Width*/
     padding: var(--btn-padding-top) var(--btn-padding-right) var(--btn-padding-bottom) var(--btn-padding-left); /*PaddingTop, PaddingRight, PaddingBottom, PaddingLeft*/
 
 	/*

@@ -61,15 +61,175 @@ TO ADD EXTERNAL DOMAINS
       of-type="OptionSet" usage="bound" required="true" default-value="val" />
     <!-- 7 -->
     <property name="BorderColor" display-name-key="BorderColor_Display_Key"
-      description-key="Sets the colour of the button border." of-type="OptionSet" usage="bound"
-      required="true" default-value="val" />
+      description-key="Sets the colour of the button border." of-type="Enum" usage="bound"
+      required="true" default-value="0">
+      <value name="HmrcGreen40D" display-name-key="Color_HmrcGreen40D">--hmrc-green-40d</value>
+      <value name="HmrcGreenStandard" display-name-key="Color_HmrcGreenStandard">--hmrc-green-standard</value>
+      <value name="HmrcGreen20L" display-name-key="Color_HmrcGreen20L">--hmrc-green-20l</value>
+      <value name="HmrcGreen40L" display-name-key="Color_HmrcGreen40L">--hmrc-green-40l</value>
+      <value name="HmrcGreen60L" display-name-key="Color_HmrcGreen60L">--hmrc-green-60l</value>
+      <value name="HmrcGreen80L" display-name-key="Color_HmrcGreen80L">--hmrc-green-80l</value>
+      <value name="HmrcGreen90L" display-name-key="Color_HmrcGreen90L">--hmrc-green-90l</value>
+      <value name="HmrcLightGreen40D" display-name-key="Color_HmrcLightGreen40D">--hmrc-light-green-40d</value>
+      <value name="HmrcLightGreenStandard" display-name-key="Color_HmrcLightGreenStandard">--hmrc-light-green-standard</value>
+      <value name="HmrcLightGreen20L" display-name-key="Color_HmrcLightGreen20L">--hmrc-light-green-20l</value>
+      <value name="HmrcLightGreen40L" display-name-key="Color_HmrcLightGreen40L">--hmrc-light-green-40l</value>
+      <value name="HmrcLightGreen60L" display-name-key="Color_HmrcLightGreen60L">--hmrc-light-green-60l</value>
+      <value name="HmrcLightGreen80L" display-name-key="Color_HmrcLightGreen80L">--hmrc-light-green-80l</value>
+      <value name="HmrcLightGreen90L" display-name-key="Color_HmrcLightGreen90L">--hmrc-light-green-90l</value>
+      <value name="HmrcDarkGreen40D" display-name-key="Color_HmrcDarkGreen40D">--hmrc-dark-green-40d</value>
+      <value name="HmrcDarkGreenStandard" display-name-key="Color_HmrcDarkGreenStandard">--hmrc-dark-green-standard</value>
+      <value name="HmrcDarkGreen20L" display-name-key="Color_HmrcDarkGreen20L">--hmrc-dark-green-20l</value>
+      <value name="HmrcDarkGreen40L" display-name-key="Color_HmrcDarkGreen40L">--hmrc-dark-green-40l</value>
+      <value name="HmrcDarkGreen60L" display-name-key="Color_HmrcDarkGreen60L">--hmrc-dark-green-60l</value>
+      <value name="HmrcDarkGreen80L" display-name-key="Color_HmrcDarkGreen80L">--hmrc-dark-green-80l</value>
+      <value name="HmrcDarkGreen90L" display-name-key="Color_HmrcDarkGreen90L">--hmrc-dark-green-90l</value>
+      <value name="HmrcBlack40D" display-name-key="Color_HmrcBlack40D">--hmrc-black-40d</value>
+      <value name="HmrcBlackStandard" display-name-key="Color_HmrcBlackStandard">--hmrc-black-standard</value>
+      <value name="HmrcBlack20L" display-name-key="Color_HmrcBlack20L">--hmrc-black-20l</value>
+      <value name="HmrcBlack40L" display-name-key="Color_HmrcBlack40L">--hmrc-black-40l</value>
+      <value name="HmrcBlack60L" display-name-key="Color_HmrcBlack60L">--hmrc-black-60l</value>
+      <value name="HmrcBlack80L" display-name-key="Color_HmrcBlack80L">--hmrc-black-80l</value>
+      <value name="HmrcBlack90L" display-name-key="Color_HmrcBlack90L">--hmrc-black-90l</value>
+      <value name="Yellow40D" display-name-key="Color_Yellow40D">--yellow-40d</value>
+      <value name="YellowStandard" display-name-key="Color_YellowStandard">--yellow-standard</value>
+      <value name="Yellow20L" display-name-key="Color_Yellow20L">--yellow-20l</value>
+      <value name="Yellow40L" display-name-key="Color_Yellow40L">--yellow-40l</value>
+      <value name="Yellow60L" display-name-key="Color_Yellow60L">--yellow-60l</value>
+      <value name="Yellow80L" display-name-key="Color_Yellow80L">--yellow-80l</value>
+      <value name="Yellow90L" display-name-key="Color_Yellow90L">--yellow-90l</value>
+      <value name="LightYellow40D" display-name-key="Color_LightYellow40D">--light-yellow-40d</value>
+      <value name="LightYellowStandard" display-name-key="Color_LightYellowStandard">--light-yellow-standard</value>
+      <value name="LightYellow20L" display-name-key="Color_LightYellow20L">--light-yellow-20l</value>
+      <value name="LightYellow40L" display-name-key="Color_LightYellow40L">--light-yellow-40l</value>
+      <value name="LightYellow60L" display-name-key="Color_LightYellow60L">--light-yellow-60l</value>
+      <value name="LightYellow80L" display-name-key="Color_LightYellow80L">--light-yellow-80l</value>
+      <value name="LightYellow90L" display-name-key="Color_LightYellow90L">--light-yellow-90l</value>
+      <value name="DarkYellow40D" display-name-key="Color_DarkYellow40D">--dark-yellow-40d</value>
+      <value name="DarkYellowStandard" display-name-key="Color_DarkYellowStandard">--dark-yellow-standard</value>
+      <value name="DarkYellow20L" display-name-key="Color_DarkYellow20L">--dark-yellow-20l</value>
+      <value name="DarkYellow40L" display-name-key="Color_DarkYellow40L">--dark-yellow-40l</value>
+      <value name="DarkYellow60L" display-name-key="Color_DarkYellow60L">--dark-yellow-60l</value>
+      <value name="DarkYellow80L" display-name-key="Color_DarkYellow80L">--dark-yellow-80l</value>
+      <value name="DarkYellow90L" display-name-key="Color_DarkYellow90L">--dark-yellow-90l</value>
+      <value name="Orange40D" display-name-key="Color_Orange40D">--orange-40d</value>
+      <value name="OrangeStandard" display-name-key="Color_OrangeStandard">--orange-standard</value>
+      <value name="Orange20L" display-name-key="Color_Orange20L">--orange-20l</value>
+      <value name="Orange40L" display-name-key="Color_Orange40L">--orange-40l</value>
+      <value name="Orange60L" display-name-key="Color_Orange60L">--orange-60l</value>
+      <value name="Orange80L" display-name-key="Color_Orange80L">--orange-80l</value>
+      <value name="Orange90L" display-name-key="Color_Orange90L">--orange-90l</value>
+      <value name="LightOrange40D" display-name-key="Color_LightOrange40D">--light-orange-40d</value>
+      <value name="LightOrangeStandard" display-name-key="Color_LightOrangeStandard">--light-orange-standard</value>
+      <value name="LightOrange20L" display-name-key="Color_LightOrange20L">--light-orange-20l</value>
+      <value name="LightOrange40L" display-name-key="Color_LightOrange40L">--light-orange-40l</value>
+      <value name="LightOrange60L" display-name-key="Color_LightOrange60L">--light-orange-60l</value>
+      <value name="LightOrange80L" display-name-key="Color_LightOrange80L">--light-orange-80l</value>
+      <value name="LightOrange90L" display-name-key="Color_LightOrange90L">--light-orange-90l</value>
+      <value name="DarkOrange40D" display-name-key="Color_DarkOrange40D">--dark-orange-40d</value>
+      <value name="DarkOrangeStandard" display-name-key="Color_DarkOrangeStandard">--dark-orange-standard</value>
+      <value name="DarkOrange20L" display-name-key="Color_DarkOrange20L">--dark-orange-20l</value>
+      <value name="DarkOrange40L" display-name-key="Color_DarkOrange40L">--dark-orange-40l</value>
+      <value name="DarkOrange60L" display-name-key="Color_DarkOrange60L">--dark-orange-60l</value>
+      <value name="DarkOrange80L" display-name-key="Color_DarkOrange80L">--dark-orange-80l</value>
+      <value name="DarkOrange90L" display-name-key="Color_DarkOrange90L">--dark-orange-90l</value>
+      <value name="Lilac40D" display-name-key="Color_Lilac40D">--lilac-40d</value>
+      <value name="LilacStandard" display-name-key="Color_LilacStandard">--lilac-standard</value>
+      <value name="Lilac20L" display-name-key="Color_Lilac20L">--lilac-20l</value>
+      <value name="Lilac40L" display-name-key="Color_Lilac40L">--lilac-40l</value>
+      <value name="Lilac60L" display-name-key="Color_Lilac60L">--lilac-60l</value>
+      <value name="Lilac80L" display-name-key="Color_Lilac80L">--lilac-80l</value>
+      <value name="Lilac90L" display-name-key="Color_Lilac90L">--lilac-90l</value>
+      <value name="LightLilac40D" display-name-key="Color_LightLilac40D">--light-lilac-40d</value>
+      <value name="LightLilacStandard" display-name-key="Color_LightLilacStandard">--light-lilac-standard</value>
+      <value name="LightLilac20L" display-name-key="Color_LightLilac20L">--light-lilac-20l</value>
+      <value name="LightLilac40L" display-name-key="Color_LightLilac40L">--light-lilac-40l</value>
+      <value name="LightLilac60L" display-name-key="Color_LightLilac60L">--light-lilac-60l</value>
+      <value name="LightLilac80L" display-name-key="Color_LightLilac80L">--light-lilac-80l</value>
+      <value name="LightLilac90L" display-name-key="Color_LightLilac90L">--light-lilac-90l</value>
+      <value name="DarkLilac40D" display-name-key="Color_DarkLilac40D">--dark-lilac-40d</value>
+      <value name="DarkLilacStandard" display-name-key="Color_DarkLilacStandard">--dark-lilac-standard</value>
+      <value name="DarkLilac20L" display-name-key="Color_DarkLilac20L">--dark-lilac-20l</value>
+      <value name="DarkLilac40L" display-name-key="Color_DarkLilac40L">--dark-lilac-40l</value>
+      <value name="DarkLilac60L" display-name-key="Color_DarkLilac60L">--dark-lilac-60l</value>
+      <value name="DarkLilac80L" display-name-key="Color_DarkLilac80L">--dark-lilac-80l</value>
+      <value name="DarkLilac90L" display-name-key="Color_DarkLilac90L">--dark-lilac-90l</value>
+      <value name="Red40D" display-name-key="Color_Red40D">--red-40d</value>
+      <value name="RedStandard" display-name-key="Color_RedStandard">--red-standard</value>
+      <value name="Red20L" display-name-key="Color_Red20L">--red-20l</value>
+      <value name="Red40L" display-name-key="Color_Red40L">--red-40l</value>
+      <value name="Red60L" display-name-key="Color_Red60L">--red-60l</value>
+      <value name="Red80L" display-name-key="Color_Red80L">--red-80l</value>
+      <value name="Red90L" display-name-key="Color_Red90L">--red-90l</value>
+      <value name="LightRed40D" display-name-key="Color_LightRed40D">--light-red-40d</value>
+      <value name="LightRedStandard" display-name-key="Color_LightRedStandard">--light-red-standard</value>
+      <value name="LightRed20L" display-name-key="Color_LightRed20L">--light-red-20l</value>
+      <value name="LightRed40L" display-name-key="Color_LightRed40L">--light-red-40l</value>
+      <value name="LightRed60L" display-name-key="Color_LightRed60L">--light-red-60l</value>
+      <value name="LightRed80L" display-name-key="Color_LightRed80L">--light-red-80l</value>
+      <value name="LightRed90L" display-name-key="Color_LightRed90L">--light-red-90l</value>
+      <value name="DarkRed40D" display-name-key="Color_DarkRed40D">--dark-red-40d</value>
+      <value name="DarkRedStandard" display-name-key="Color_DarkRedStandard">--dark-red-standard</value>
+      <value name="DarkRed20L" display-name-key="Color_DarkRed20L">--dark-red-20l</value>
+      <value name="DarkRed40L" display-name-key="Color_DarkRed40L">--dark-red-40l</value>
+      <value name="DarkRed60L" display-name-key="Color_DarkRed60L">--dark-red-60l</value>
+      <value name="DarkRed80L" display-name-key="Color_DarkRed80L">--dark-red-80l</value>
+      <value name="DarkRed90L" display-name-key="Color_DarkRed90L">--dark-red-90l</value>
+
+      <value name="Blue40D" display-name-key="Color_Blue40D">--blue-40d</value>
+      <value name="BlueStandard" display-name-key="Color_BlueStandard">--blue-standard</value>
+      <value name="Blue20L" display-name-key="Color_Blue20L">--blue-20l</value>
+      <value name="Blue40L" display-name-key="Color_Blue40L">--blue-40l</value>
+      <value name="Blue60L" display-name-key="Color_Blue60L">--blue-60l</value>
+      <value name="Blue80L" display-name-key="Color_Blue80L">--blue-80l</value>
+      <value name="Blue90L" display-name-key="Color_Blue90L">--blue-90l</value>
+      <value name="LightBlue40D" display-name-key="Color_LightBlue40D">--light-blue-40d</value>
+      <value name="LightBlueStandard" display-name-key="Color_LightBlueStandard">--light-blue-standard</value>
+      <value name="LightBlue20L" display-name-key="Color_LightBlue20L">--light-blue-20l</value>
+      <value name="LightBlue40L" display-name-key="Color_LightBlue40L">--light-blue-40l</value>
+      <value name="LightBlue60L" display-name-key="Color_LightBlue60L">--light-blue-60l</value>
+      <value name="LightBlue80L" display-name-key="Color_LightBlue80L">--light-blue-80l</value>
+      <value name="LightBlue90L" display-name-key="Color_LightBlue90L">--light-blue-90l</value>
+      <value name="Navy40D" display-name-key="Color_Navy40D">--navy-40d</value>
+      <value name="NavyStandard" display-name-key="Color_NavyStandard">--navy-standard</value>
+      <value name="Navy20L" display-name-key="Color_Navy20L">--navy-20l</value>
+      <value name="Navy40L" display-name-key="Color_Navy40L">--navy-40l</value>
+      <value name="Navy60L" display-name-key="Color_Navy60L">--navy-60l</value>
+      <value name="Navy80L" display-name-key="Color_Navy80L">--navy-80l</value>
+      <value name="Navy90L" display-name-key="Color_Navy90L">--navy-90l</value>
+      <value name="AcWhiteStandard" display-name-key="Color_AcWhiteStandard">--ac-white-standard</value>
+      <value name="AcWhiteMask" display-name-key="Color_AcWhiteMask">--ac-white-mask</value>
+      <value name="AcGreenStandard" display-name-key="Color_AcGreenStandard">--ac-green-standard</value>
+      <value name="AcGreen20L" display-name-key="Color_AcGreen20L">--ac-green-20l</value>
+      <value name="AcGreen40L" display-name-key="Color_AcGreen40L">--ac-green-40l</value>
+      <value name="AcGreen60L" display-name-key="Color_AcGreen60L">--ac-green-60l</value>
+      <value name="AcGreen80L" display-name-key="Color_AcGreen80L">--ac-green-80l</value>
+      <value name="AcGreen90L" display-name-key="Color_AcGreen90L">--ac-green-90l</value>
+      <value name="AcDarkBlue40D" display-name-key="Color_AcDarkBlue40D">--ac-dark-blue-40d</value>
+      <value name="AcDarkBlueStandard" display-name-key="Color_AcDarkBlueStandard">--ac-dark-blue-standard</value>
+      <value name="AcDarkBlue20L" display-name-key="Color_AcDarkBlue20L">--ac-dark-blue-20l</value>
+      <value name="AcDarkBlue40L" display-name-key="Color_AcDarkBlue40L">--ac-dark-blue-40l</value>
+      <value name="AcDarkBlue60L" display-name-key="Color_AcDarkBlue60L">--ac-dark-blue-60l</value>
+      <value name="AcDarkBlue80L" display-name-key="Color_AcDarkBlue80L">--ac-dark-blue-80l</value>
+      <value name="AcDarkBlue90L" display-name-key="Color_AcDarkBlue90L">--ac-dark-blue-90l</value>
+
+
+
+
+
+
+
+
+
+
+    </property>
     <!-- 8 -->
     <property name="BorderStyle" display-name-key="BorderStyle_Display_Key"
       description-key="Sets the button border style." of-type="Enum" usage="bound" required="true"
       default-value="0" >
-        <value name="0" display-name-key="BorderStyle_Solid_Display_Key">Solid</value>
-        <value name="1" display-name-key="BorderStyle_Dashed_Display_Key">Dashing</value>
-        <value name="2" display-name-key="BorderStyle_Dotted_Display_Key">Dotty</value>
+        <value name="Solid" display-name-key="BorderStyle_Solid_Display_Key">0</value>
+        <value name="Dashed" display-name-key="BorderStyle_Dashed_Display_Key">1</value>
+        <value name="Dotted" display-name-key="BorderStyle_Dotted_Display_Key">2</value>
       </property>
     <!-- 9 -->
     <property name="BorderThickness" display-name-key="BorderThickness_Display_Key"
@@ -160,26 +320,28 @@ TO ADD EXTERNAL DOMAINS
       description-key="Determines whether the button text is italicised." of-type="TwoOptions"
       usage="bound" required="true" default-value="false" />
     <!-- 30 -->
-    <property name="OnSelect" display-name-key="OnSelect_Display_Key"
-      description-key="Power Fx formula executed when the user activates the button."
-      of-type="Multiple" usage="bound" required="true" default-value="val" />
+    <event name="OnPress" display-name-key="OnPress_Event_Key"
+      description-key="Power Fx formula executed when the user presses the button."
+      pfx-default-value="Notify('Button pressed!')"
+      />
+
     <!-- 31 -->
     <property name="PaddingBottom" display-name-key="PaddingBottom_Display_Key"
       description-key="Sets the space between the button content and its bottom edge."
-      of-type="Whole.None" usage="bound" required="true" default-value="val" />
+      of-type="Whole.None" usage="bound" required="true" default-value="25" />
     <!-- 32 -->
     <property name="PaddingLeft" display-name-key="PaddingLeft_Display_Key"
       description-key="Sets the space between the button content and its left edge."
-      of-type="Whole.None" usage="bound" required="true" default-value="val" />
+      of-type="Whole.None" usage="bound" required="true" default-value="25" />
     <!-- 33 -->
     <property name="PaddingRight" display-name-key="PaddingRight_Display_Key"
       description-key="Sets the space between the button content and its right edge."
-      of-type="Whole.None" usage="bound" required="true" default-value="val" />
+      of-type="Whole.None" usage="bound" required="true" default-value="25" />
     <!-- 34 -->
     <property name="PaddingTop" display-name-key="PaddingTop_Display_Key"
       description-key="Sets the space between the button content and its top edge."
       of-type="Whole.None"
-      usage="bound" required="true" default-value="val" />
+      usage="bound" required="true" default-value="25" />
     <!-- 35 -->
     <property name="PressedBorderColor" display-name-key="PressedBorderColor_Display_Key"
       description-key="Sets the border colour while the button is being pressed."
@@ -278,7 +440,8 @@ description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" requir
 -->
     <resources>
       <code path="index.ts" order="1" />
-      <css path="css/Button.css" order="1" />
+      <css path="css/Button.css" order="2" />
+      <css path="css/Colours.css" order="1" />
 
       <!-- UNCOMMENT TO ADD MORE RESOURCES
 <css path="css/btnPCF.css" order="1" />

@@ -1,45 +1,173 @@
-export interface Colours {
-  //HMRC Branding 2023
-  HmrcGreen: {'40%D':"#005043",'Standard':"#008670",'20%L':"#339E8D",'40%L':"#66B6A9",'60%L':"#99CFC6",'80%L':"#CCE7E2",'90%L':"#E6F3F1"};
-  HmrcLightGreen: {'40%D':"#8B9291",'Standard':"#E8F3F1",'20%L':"#EDF5F4",'40%L':"#F1F8F7",'60%L':"#F6FAF9",'80%L':"#FAFDFC",'90%L':"#FDFEFE"};
-  HmrcDarkGreen: {'40%D':"#00201B",'Standard':"#00362D",'20%L':"#335E57",'40%L':"#668681",'60%L':"#99AFAB",'80%L':"#CCD7D5",'90%L':"#E6EBEA"};
-  HmrcAccessibleBlack: {'40%D':"#070707",'Standard':"#0B0C0C",'20%L':"#3C3D3D",'40%L':"#6D6D6D",'60%L':"#9D9E9E",'80%L':"#CECECE",'90%L':"#E7E7E7"};
-  Yellow: {'40%D':"#997D00",'Standard':"#FFD100",'20%L':"#FFDA33",'40%L':"#FFE366",'60%L':"#FFED99",'80%L':"#FFF6CC",'90%L':"#FFFAE6"};
-  LightYellow: {'40%D':"#998E5C",'Standard':"#FFED99",'20%L':"#FFF1AD",'40%L':"#FFF4C2",'60%L':"#FFF8D6",'80%L':"#FFFBEB",'90%L':"#FFFDF5"};
-  DarkYellow: {'40%D':"#865800",'Standard':"#E09300",'20%L':"#E6A933",'40%L':"#ECBE66",'60%L':"#F3D499",'80%L':"#F9E9CC",'90%L':"#FCF4E6"};
-  Orange: {'40%D':"#994C22",'Standard':"#FF7F38",'20%L':"#FF9960",'40%L':"#FFB288",'60%L':"#FFCCAF",'80%L':"#FFE5D7",'90%L':"#FFF2EB"};
-  LightOrange: {'40%D':"#997A69",'Standard':"#FFCCAF",'20%L':"#FFD6BF",'40%L':"#FFE0CF",'60%L':"#FFEBDF",'80%L':"#FFF5EF",'90%L':"#FFFAF7"};
-  DarkOrange: {'40%D':"#832D0E",'Standard':"#DB4B17",'20%L':"#E26F45",'40%L':"#E99374",'60%L':"#F1B7A2",'80%L':"#F8DBD1",'90%L':"#FBEDE8"};
-  Lilac: {'40%D':"#835692",'Standard':"#DA8FF4",'20%L':"#E1A5F6",'40%L':"#E9BCF8",'60%L':"#F0D2FB",'80%L':"#F8E9FD",'90%L':"#FBF4FE"};
-  LightLilac: {'40%D':"#907E97",'Standard':"#F0D2FB",'20%L':"#F3DBFC",'40%L':"#F6E4FD",'60%L':"#F9EDFD",'80%L':"#FCF6FE",'90%L':"#FEFBFF"};
-  DarkLilac: {'40%D':"#684475",'Standard':"#AE72C3",'20%L':"#BE8ECF",'40%L':"#CEAADB",'60%L':"#DFC7E7",'80%L':"#EFE3F3",'90%L':"#F7F1F9"};
-  Red: {'40%D':"#780A1C",'Standard':"#C8102E",'20%L':"#D34058",'40%L':"#DE7082",'60%L':"#E99FAB",'80%L':"#F4CFD5",'90%L':"#FAE7EA"};
-  LightRed: {'40%D':"#977D89",'Standard':"#FBD1E5",'20%L':"#FCDAEA",'40%L':"#FDE3EF",'60%L':"#FDEDF5",'80%L':"#FEF6FA",'90%L':"#FFFAFC"};
-  DarkRed: {'40%D':"#4A0000",'Standard':"#7B0000",'20%L':"#953333",'40%L':"#B06666",'60%L':"#CA9999",'80%L':"#E5CCCC",'90%L':"#F2E6E6"};
-  Blue: {'40%D':"#4F6D99",'Standard':"#84B6FF",'20%L':"#9DC5FF",'40%L':"#B5D3FF",'60%L':"#CEE2FF",'80%L':"#E6F0FF",'90%L':"#F3F8FF"};
-  LightBlue: {'40%D':"#7C8899",'Standard':"#CEE2FF",'20%L':"#D8E8FF",'40%L':"#E2EEFF",'60%L':"#EBF3FF",'80%L':"#F5F9FF",'90%L':"#FAFCFF"};
-  Navy: {'40%D':"#0D1341",'Standard':"#151F6D",'20%L':"#444C8A",'40%L':"#7379A7",'60%L':"#A1A5C5",'80%L':"#D0D2E2",'90%L':"#E8E9F0"};
-
-  //Additional or Custom
-   AC_White: {
-        'Standard': "#FFFFFF",
-        'Mask': "#FFFFFFAA"
-    },
-    AC_Green: {
-        'Standard': "#123524",
-        '20%L': "#287750",
-        '40%L': "#3FB87D",
-        '60%L': "#7CD2A8",
-        '80%L': "#BDE9D4",
-        '90%L': "#DEF4E9"
-    },
-    AC_DarkBlue: {
-        '40%D': "#0f182e",
-        'Standard': "#19284c",
-        '20%L': "#2d488a",
-        '40%L': "#466bc2",
-        '60%L': "#849cd6",
-        '80%L': "#c1ceeb",
-        '90%L': "#e0e6f5"
-    }
+:root {
+	/* HMRC Branding 2023 */
+	/* HMRC Green */
+	--hmrc-green-40d: #005043;
+	--hmrc-green-Standard: #008670;
+	--hmrc-green-20L: #339E8D;
+	--hmrc-green-40L: #66B6A9;
+	--hmrc-green-60L: #99CFC6;
+	--hmrc-green-80L: #CCE7E2;
+	--hmrc-green-90L: #E6F3F1;
+	/* HMRC Light Green */
+	--hmrc-light-green-40d: #8B9291;
+	--hmrc-light-green-Standard: #E8F3F1;
+	--hmrc-light-green-20L: #EDF5F4;
+	--hmrc-light-green-40L: #F1F8F7;
+	--hmrc-light-green-60L: #F6FAF9;
+	--hmrc-light-green-80L: #FAFDFC;
+	--hmrc-light-green-90L: #FDFEFE;
+	/* HMRC Dark Green */
+	--hmrc-dark-green-40d: #00201B;
+	--hmrc-dark-green-standard: #00362D;
+	--hmrc-dark-green-20l: #335E57;
+	--hmrc-dark-green-40l: #668681;
+	--hmrc-dark-green-60l: #99AFAB;
+	--hmrc-dark-green-80l: #CCD7D5;
+	--hmrc-dark-green-90l: #E6EBEA;
+	/* HMRC Black */
+	--hmrc-black-40d: #070707;
+	--hmrc-black-standard: #0B0C0C;
+	--hmrc-black-20l: #3C3D3D;
+	--hmrc-black-40l: #6D6D6D;
+	--hmrc-black-60l: #9D9E9E;
+	--hmrc-black-80l: #CECECE;
+	--hmrc-black-90l: #E7E7E7;
+	/* HMRC Yellow */
+	--yellow-40d: #997D00;
+	--yellow-standard: #FFD100;
+	--yellow-20l: #FFDA33;
+	--yellow-40l: #FFE366;
+	--yellow-60l: #FFED99;
+	--yellow-80l: #FFF6CC;
+	--yellow-90l: #FFFAE6;
+	/* HMRC Light Yellow */
+	--light-yellow-40d: #998E5C;
+	--light-yellow-standard: #FFED99;
+	--light-yellow-20l: #FFF1AD;
+	--light-yellow-40l: #FFF4C2;
+	--light-yellow-60l: #FFF8D6;
+	--light-yellow-80l: #FFFBEB;
+	--light-yellow-90l: #FFFDF5;
+	/* HMRC Dark Yellow */
+	--dark-yellow-40d: #865800;
+	--dark-yellow-standard: #E09300;
+	--dark-yellow-20l: #E6A933;
+	--dark-yellow-40l: #ECBE66;
+	--dark-yellow-60l: #F3D499;
+	--dark-yellow-80l: #F9E9CC;
+	--dark-yellow-90l: #FCF4E6;
+	/* HMRC Orange */
+	--orange-40d: #994C22;
+	--orange-standard: #FF7F38;
+	--orange-20l: #FF9960;
+	--orange-40l: #FFB288;
+	--orange-60l: #FFCCAF;
+	--orange-80l: #FFE5D7;
+	--orange-90l: #FFF2EB;
+	/* HMRC Light Orange */
+	--light-orange-40d: #997A69;
+	--light-orange-standard: #FFCCAF;
+	--light-orange-20l: #FFD6BF;
+	--light-orange-40l: #FFE0CF;
+	--light-orange-60l: #FFEBDF;
+	--light-orange-80l: #FFF5EF;
+	--light-orange-90l: #FFFAF7;
+	/* HMRC Dark Orange */
+	--dark-orange-40d: #832D0E;
+	--dark-orange-standard: #DB4B17;
+	--dark-orange-20l: #E26F45;
+	--dark-orange-40l: #E99374;
+	--dark-orange-60l: #F1B7A2;
+	--dark-orange-80l: #F8DBD1;
+	--dark-orange-90l: #FBEDE8;
+	/* HMRC Lilac */
+	--lilac-40d: #835692;
+	--lilac-standard: #DA8FF4;
+	--lilac-20l: #E1A5F6;
+	--lilac-40l: #E9BCF8;
+	--lilac-60l: #F0D2FB;
+	--lilac-80l: #F8E9FD;
+	--lilac-90l: #FBF4FE;
+	/* HMRC Light Lilac */
+	--light-lilac-40d: #907E97;
+	--light-lilac-standard: #F0D2FB;
+	--light-lilac-20l: #F3DBFC;
+	--light-lilac-40l: #F6E4FD;
+	--light-lilac-60l: #F9EDFD;
+	--light-lilac-80l: #FCF6FE;
+	--light-lilac-90l: #FEFBFF;
+	/* HMRC Dark Lilac */
+	--dark-lilac-40d: #684475;
+	--dark-lilac-standard: #AE72C3;
+	--dark-lilac-20l: #BE8ECF;
+	--dark-lilac-40l: #CEAADB;
+	--dark-lilac-60l: #DFC7E7;
+	--dark-lilac-80l: #EFE3F3;
+	--dark-lilac-90l: #F7F1F9;
+	/* HMRC Red */
+	--red-40d: #780A1C;
+	--red-standard: #C8102E;
+	--red-20l: #D34058;
+	--red-40l: #DE7082;
+	--red-60l: #E99FAB;
+	--red-80l: #F4CFD5;
+	--red-90l: #FAE7EA;
+	/* HMRC Light Red */
+	--light-red-40d: #977D89;
+	--light-red-standard: #FBD1E5;
+	--light-red-20l: #FCDAEA;
+	--light-red-40l: #FDE3EF;
+	--light-red-60l: #FDEDF5;
+	--light-red-80l: #FEF6FA;
+	--light-red-90l: #FFFAFC;
+	/* HMRC Dark Red */
+	--dark-red-40d: #4A0000;
+	--dark-red-standard: #7B0000;
+	--dark-red-20l: #953333;
+	--dark-red-40l: #B06666;
+	--dark-red-60l: #CA9999;
+	--dark-red-80l: #E5CCCC;
+	--dark-red-90l: #F2E6E6;
+	/* HMRC Blue */
+	--blue-40d: #4F6D99;
+	--blue-standard: #84B6FF;
+	--blue-20l: #9DC5FF;
+	--blue-40l: #B5D3FF;
+	--blue-60l: #CEE2FF;
+	--blue-80l: #E6F0FF;
+	--blue-90l: #F3F8FF;
+	/* HMRC Light Blue */
+	--light-blue-40d: #7C8899;
+	--light-blue-standard: #CEE2FF;
+	--light-blue-20l: #D8E8FF;
+	--light-blue-40l: #E2EEFF;
+	--light-blue-60l: #EBF3FF;
+	--light-blue-80l: #F5F9FF;
+	--light-blue-90l: #FAFCFF;
+	/* HMRC Navy */
+	--navy-40d: #0D1341;
+	--navy-standard: #151F6D;
+	--navy-20l: #444C8A;
+	--navy-40l: #7379A7;
+	--navy-60l: #A1A5C5;
+	--navy-80l: #D0D2E2;
+	--navy-90l: #E8E9F0;
+	/* Additional or Custom */ /* Additional White */
+	--ac-white-standard: #FFFFFF;
+	--ac-white-mask: #FFFFFFAA;
+	/*Custom Green */
+	--ac-green-standard: #123524;
+	--ac-green-20l: #287750;
+	--ac-green-40l: #3FB87D;
+	--ac-green-60l: #7CD2A8;
+	--ac-green-80l: #BDE9D4;
+	--ac-green-90l: #DEF4E9;
+	/*Custom Dark Blue */
+	--ac-dark-blue-40d: #0f182e;
+	--ac-dark-blue-standard: #19284c;
+	--ac-dark-blue-20l: #2d488a;
+	--ac-dark-blue-40l: #466bc2;
+	--ac-dark-blue-60l: #849cd6;
+	--ac-dark-blue-80l: #c1ceeb;
+	--ac-dark-blue-90l: #e0e6f5;
 }

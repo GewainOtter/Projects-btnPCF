@@ -2,6 +2,9 @@ import { IInputs, IOutputs } from "./generated/ManifestTypes";
 import { createRoot, Root } from "react-dom/client";
 import Button from "./components/Button";
 import "./css/Button.css";
+import { Colours } from "./components/Colours";
+import "./css/Colours.css";
+
 
 export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 	root: Root; // Replace 'any' with the correct type if available
@@ -52,8 +55,11 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		this.root.render(
 			Button({
 				label: "React Button",
-				
-				onClick: () => alert("React Button Clicked!"),
+
+				// onClick: () => alert("React Button Clicked!"),
+				onClick: () => {
+					this.container.dispatchEvent(new CustomEvent("OnPress", { bubbles: true }));
+				}
 			}),
 		);
 		this.container.style.setProperty("--btn-acceptsfocus", String(context.parameters.AcceptsFocus.raw));
@@ -62,7 +68,15 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		this.container.style.setProperty("--btn-appearance", String(context.parameters.Appearance.raw));
 		this.container.style.setProperty("--btn-autodisableonselect", String(context.parameters.AutoDisableOnSelect.raw));
 		this.container.style.setProperty("--btn-basepalettecolor", String(context.parameters.BasePaletteColor.raw));
-		this.container.style.setProperty("--btn-bordercolor", String(context.parameters.BorderColor.raw));
+		// this.container.style.setProperty("--btn-bordercolor", String(context.parameters.BorderColor.raw));
+		const borderColor = context.parameters.BorderColor.raw;
+
+		if (borderColor) {
+			this.container.style.setProperty(
+				"--btn-border-color",
+				`var(${borderColor})`,
+			);
+		}
 		this.container.style.setProperty("--btn-borderstyle", String(context.parameters.BorderStyle.raw));
 		this.container.style.setProperty("--btn-borderthickness", String(context.parameters.BorderThickness.raw));
 		this.container.style.setProperty("--btn-color", String(context.parameters.Color.raw));
@@ -85,7 +99,7 @@ export class btnPCF implements ComponentFramework.StandardControl<IInputs, IOutp
 		this.container.style.setProperty("--btn-iconrotation", String(context.parameters.IconRotation.raw));
 		this.container.style.setProperty("--btn-layout", String(context.parameters.Layout.raw));
 		this.container.style.setProperty("--btn-italic", String(context.parameters.Italic.raw));
-		this.container.style.setProperty("--btn-onselect", String(context.parameters.OnSelect.raw));
+		// this.container.style.setProperty("--btn-onpress", String(context.parameters.OnPress.raw));
 		this.container.style.setProperty("--btn-paddingbottom", String(context.parameters.PaddingBottom.raw));
 		this.container.style.setProperty("--btn-paddingleft", String(context.parameters.PaddingLeft.raw));
 		this.container.style.setProperty("--btn-paddingright", String(context.parameters.PaddingRight.raw));
